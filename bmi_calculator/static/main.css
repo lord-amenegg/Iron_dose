@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700,900");
+
+head{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: large;
+  background-color: #ebedef;
+  padding: 10;
+  margin: 10;
+
+}
+body{
+
+    display: flex;
+    flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: medium;
+    
+
+  background-color: #ebedef;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/1GZX_Haemoglobin.png/1200px-1GZX_Haemoglobin.png");
+}
+.blur {
+  padding: : 2rem;
+  width: 400px;
+  height: auto;
+  justify-content: space-evenly;
+  text-align: center;
+  background: rgba(255,255,255,0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+    input[type=text], select {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      input[type=submit] {
+  
+  
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
