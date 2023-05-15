@@ -1,0 +1,38 @@
+{% extends 'base.html' %} 
+{% block title %} 
+Iron Dose Calculator
+
+{% endblock %}
+
+
+{% block content %} 
+  
+  {% block error_message %}{% endblock %}
+    <form method="post">
+      <label for="weight">Weight (kg):</label>
+      <br>
+      <input type="text" name="weight" id="weight" placeholder="{{ weight }}">
+      <br>
+      <label for="height">Height (cm):</label>
+      <br>
+      <input type="text" name="height" id="height" placeholder="{{ height}}">
+      <br>
+      <label for="Hb">Haemoglobin (g/dL):</label>
+      <br>
+      <input type="text" name="Hb" id="Hb" placeholder="{{ hb }}">
+      <br>
+      <label for ="sex">Select Sex:</label>
+      <br>
+      <select name="sex", id="sex">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        </select>
+        <br>
+      <input type="submit" value="Calculate Iron Dose">
+      <br>
+    </form>
+    
+    <p><h1>IBW: {{ ibw }}</h1></p>
+    <p><h1>BMI: {{ bmi }}</h1></p>
+    <p><h1> Iron Dose: {{ iron_dose }}</h1></p>
+{% endblock %} 
